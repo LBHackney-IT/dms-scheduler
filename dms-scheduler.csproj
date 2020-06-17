@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AssemblyName>DMSScheduler</AssemblyName>
+    <PackageId>dms-scheduler</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.Core" Version="1.0.0" />
+    <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.3.0" />
+    <PackageReference Include="AWSSDK.DatabaseMigrationService" Version="3.3.105.26" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Amazon.Lambda.Tools" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
